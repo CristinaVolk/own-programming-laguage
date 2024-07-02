@@ -2,13 +2,13 @@ import {ExpressionNode} from "./ExpressionNode";
 import {Token} from "../Token";
 
 export class UnarOperationNode extends ExpressionNode {
-    operation: Token
+    operator: Token
     operand: ExpressionNode
 
 
-    constructor(operation: Token, operand: ExpressionNode) {
+    constructor(operator: Token, operand: ExpressionNode) {
         super();
-        this.operation = operation;
+        this.operator = operator;
         this.operand = operand;
     }
 }

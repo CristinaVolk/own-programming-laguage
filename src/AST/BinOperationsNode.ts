@@ -2,13 +2,13 @@ import {ExpressionNode} from "./ExpressionNode";
 import {Token} from "../Token";
 
 export class BinOperationsNode extends ExpressionNode {
-    operation: Token
+    operator: Token
     leftNode: ExpressionNode
     rightNode: ExpressionNode
 
-    constructor(operation: Token, leftNode: ExpressionNode, rightNode: ExpressionNode) {
+    constructor(operator: Token, leftNode: ExpressionNode, rightNode: ExpressionNode) {
         super();
-        this.operation = operation
+        this.operator = operator
         this.leftNode = leftNode
         this.rightNode = rightNode
     }
